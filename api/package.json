@@ -1,0 +1,33 @@
+{
+  "name": "@agent-earn/api",
+  "version": "0.1.0",
+  "description": "Agent Earn MCP Attribution Protocol API - TEE-attested signed intent tokens",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "vitest",
+    "test:run": "vitest run"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.0",
+    "@hono/zod-validator": "^0.7.6",
+    "better-sqlite3": "^11.0.0",
+    "drizzle-orm": "^0.35.0",
+    "hono": "^4.6.0",
+    "jose": "^5.9.0",
+    "nanoid": "^5.0.0",
+    "pino": "^9.0.0",
+    "pino-pretty": "^11.0.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.0",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}

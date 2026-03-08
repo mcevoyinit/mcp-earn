@@ -1,0 +1,35 @@
+{
+  "name": "@mcp-earn/saas-recommender-mcp",
+  "version": "0.1.0",
+  "description": "Reference MCP server that recommends SaaS tools with MCP Earn attribution",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "saas-recommender-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "inspector": "npx @modelcontextprotocol/inspector tsx src/index.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "@mcp-earn/sdk": "file:../sdk",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "saas",
+    "supabase",
+    "vercel",
+    "clerk",
+    "ai-agents"
+  ]
+}
